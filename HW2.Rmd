@@ -26,8 +26,8 @@ x=4,y=5
 ```{r}
 Vector<-c(1:100) #create the vector
 Sum<-sum(Vector) #sum up all the values in the vector
-Divider<-length(Vector) #the number of values in the vector
-Mean<-Sum/Divider #solve for the average by dividing the total by the number of values
+D<-length(Vector) #the number of values in the vector
+Mean<-Sum/D #solve for the average by dividing the total by the number of values
 Mean
 ```
 mean=50.5
