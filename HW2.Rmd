@@ -1,0 +1,44 @@
+---
+title: "CPSC 441 HW 2"
+author: "Shujie Wu"
+date: "9/7/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Solve: 
+## 2x+5y = 33
+## x+3y = 19
+
+```{r}
+x<-matrix(c(2,5,1,3),2,2,T) #make matrices of the coefficients
+y<-matrix(c(33,19),2,1,T)
+Solution<-solve(x,y) #solve for the answers
+Solution
+```
+x=4,y=5
+
+## Create a vector 1:100 and calculates the mean
+
+```{r}
+Vector<-c(1:100) #create the vector
+Sum<-sum(Vector) #sum up all the values in the vector
+Divider<-length(Vector) #the number of values in the vector
+Mean<-Sum/Divider #solve for the average by dividing the total by the number of values
+Mean
+```
+mean=50.5
+
+## Install "dplyr"
+
+install.packages("dplyr")
+
+## Data Frame
+
+```{r}
+m<-matrix(c("A","B","C","D","D","E","F","G"), nrow=2, ncol=4, byrow=T) #make the matrix
+as.data.frame(m) #transform the matrix in to a dataframe
+```
