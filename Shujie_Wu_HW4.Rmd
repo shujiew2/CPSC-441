@@ -51,6 +51,6 @@ for (i in names(pheno[,7:12]))
 library(dplyr)
 library(tidyverse)
 pheno2<-pheno
-gsub(pheno2$Y[pheno2$Y>2], 0)
+gsub(pheno2$Y[pheno2$Y>2], 0, pheno2)
 ```
 
